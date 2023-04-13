@@ -3,10 +3,15 @@ import { Inter } from 'next/font/google'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
 
 const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <div className='flex justify-center font-bold'>
+      <Head>
+        <title>Bienestar Total</title>
+      </Head>
+    
       <div className='border rounded-3xl w-5/6 bg-white bg-opacity-75 px-2 py-4 mb-8 md:w-3/4 lg:2/3'  >
         <h1 className='font-mono text-center text-3xl uppercase underline decoration-pink-500 md:text-5xl'>Bienestar Total</h1>
 
